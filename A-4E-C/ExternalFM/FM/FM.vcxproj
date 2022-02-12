@@ -185,6 +185,8 @@
     <ClInclude Include="Devices.h" />
     <ClInclude Include="Engine2.h" />
     <ClInclude Include="FuelSystem2.h" />
+    <ClInclude Include="Gear.h" />
+    <ClInclude Include="GearSystem.h" />
     <ClInclude Include="Globals.h" />
     <ClInclude Include="Hashes.h" />
     <ClInclude Include="ILS.h" />
@@ -214,6 +216,7 @@
     <ClInclude Include="Timer.h" />
     <ClInclude Include="Units.h" />
     <ClInclude Include="Vec3.h" />
+    <ClInclude Include="Wheel.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Actuator.cpp" />
@@ -240,6 +243,8 @@
     </ClCompile>
     <ClCompile Include="Engine2.cpp" />
     <ClCompile Include="FuelSystem2.cpp" />
+    <ClCompile Include="Gear.cpp" />
+    <ClCompile Include="GearSystem.cpp" />
     <ClCompile Include="ILS.cpp" />
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="Logger.cpp" />
@@ -258,6 +263,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="Wheel.cpp" />
   </ItemGroup>
   <ItemGroup>
     <MASM Include="assembly.asm">

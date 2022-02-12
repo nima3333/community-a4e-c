@@ -154,7 +154,6 @@ function SetCommand(command,value)
 end
 
 function post_initialize()
-    local wowml = sensor_data.getWOW_LeftMainLandingGear()
     local gear_clickable_ref = get_clickable_element_reference("PNT_8")
 	
 	local birth = LockOn_Options.init_conditions.birth_place
