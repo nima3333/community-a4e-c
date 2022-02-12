@@ -170,6 +170,9 @@ public:
 		m_egg = m_api.pfn_ed_cockpit_get_parameter_handle( "EGG" );
 		m_eggScore = m_api.pfn_ed_cockpit_get_parameter_handle( "EGG_SCORE" );
 		m_eggHighScore = m_api.pfn_ed_cockpit_get_parameter_handle( "EGG_HIGH_SCORE" );
+
+		m_elecGroundMode = m_api.pfn_ed_cockpit_get_parameter_handle("ELEC_GROUND_MODE");
+
 	}
 
 	cockpit_param_api& api()
@@ -315,6 +318,11 @@ public:
 	inline void ADC_setCAS( double value )
 	{
 		setParamNumber( m_ADC_CAS, value );
+	}
+
+	inline double ADC_getCAS()
+	{
+		return getParamNumber( m_ADC_CAS );
 	}
 
 	inline void ADC_setAlt( double value )
@@ -653,6 +661,11 @@ public:
 		return getParamNumber( m_ADC_altSetting );
 	}
 		 
+	inline bool getElecGroundMode()
+	{
+		return getParamNumber( m_elecGroundMode );
+	}
+
 	void* m_test = NULL;
 
 	inline void setParamNumber( void* ptr, double number )
@@ -814,6 +827,7 @@ private:
 	void* m_eggScore = NULL;
 	void* m_eggHighScore = NULL;
 
+	void* m_elecGroundMode = NULL;
 };
 
 

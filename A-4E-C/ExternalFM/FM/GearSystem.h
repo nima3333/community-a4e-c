@@ -1,24 +1,33 @@
 #pragma once
 #include <Gear.h>
+#include <AircraftState.h>
+#include <Interface.h>
 
-class GearSystem : public BaseComponent
+namespace Scooter
 {
-public:
 
-	GearSystem();
-	~GearSystem();
+	class GearSystem : public BaseComponent
+	{
+	public:
 
-	virtual void zeroInit();
-	virtual void coldInit();
-	virtual void hotInit();
-	virtual void airborneInit();
+		GearSystem(AircraftState& state, Interface& inter);
+		~GearSystem();
 
-	void update();
-	bool handleInput(int command, float value);
+		virtual void zeroInit();
+		virtual void coldInit();
+		virtual void hotInit();
+		virtual void airborneInit();
 
-	Gear leftGear;
-	Gear rightGear;
-	Gear noseGear;
+		void update();
+		bool handleInput(int command, float value);
 
-}; 
+		Gear leftGear;
+		Gear rightGear;
+		Gear noseGear;
 
+	private:
+		AircraftState& m_state;
+		Interface& m_interface;
+	};
+
+}

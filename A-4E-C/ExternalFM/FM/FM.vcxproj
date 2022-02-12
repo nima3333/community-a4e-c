@@ -216,7 +216,6 @@
     <ClInclude Include="Timer.h" />
     <ClInclude Include="Units.h" />
     <ClInclude Include="Vec3.h" />
-    <ClInclude Include="Wheel.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Actuator.cpp" />
@@ -263,7 +262,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="Timer.cpp" />
-    <ClCompile Include="Wheel.cpp" />
   </ItemGroup>
   <ItemGroup>
     <MASM Include="assembly.asm">
