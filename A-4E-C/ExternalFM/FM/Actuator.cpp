@@ -108,6 +108,12 @@ double Actuator::getPosition()
 	return m_actuatorPos;
 }
 
+void Actuator::setPosition(double pos)
+{
+	m_actuatorPos = pos;
+}
+
+
 void Actuator::setActuatorSpeed(double factor)
 {
 	m_actuatorFactor = factor;

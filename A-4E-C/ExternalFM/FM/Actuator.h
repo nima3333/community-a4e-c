@@ -34,6 +34,7 @@ public:
 	void physicsUpdate(double dt);
 	double getPosition();
 	void setActuatorSpeed(double factor);
+	void setPosition(double pos);
 private:
 	double m_actuatorFactor;
 	double m_actuatorSpeed;
